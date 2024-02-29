@@ -164,6 +164,7 @@ h2 {
     height: 100vh;
     position: relative;
 }
+
 .header__title {
     position: absolute;
     top: 90px;
@@ -173,12 +174,15 @@ h2 {
     margin: 0 15px;
     color: white;
 }
+
 .header__title_green {
     color: rgb(33, 104, 62);
 }
+
 .header__title_blue {
     color: rgb(41, 98, 116);
 }
+
 .header__image img {
     position: absolute;
     top: 0;
@@ -187,4 +191,38 @@ h2 {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.delivery {
+    padding: 33px 15px;
+}
+
+.delivery__header {
+    display: flex;
+}
+
+.delivery__title {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.delivery__description {
+    margin-top: 20px;
+}
+
+.feature {
+    padding: 33px 15px;
+}
+
+.feature__header {
+    display: flex;
+}
+
+.feature__title {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.feature__description {
+    margin-top: 20px;
 }
