@@ -226,3 +226,150 @@ h2 {
 .feature__description {
     margin-top: 20px;
 }
+
+.bestsellers {
+    padding: 33px 15px;
+}
+
+.bestsellers__title {
+    margin-bottom: 62px;
+
+}
+
+.bestsellers__cards {
+    list-style: none;
+
+}
+
+.bestellers__item {
+    margin-bottom: 14px;
+}
+
+.bestellers__item:nth-of-type(2n) .bestsellers__name {
+    background: rgb(61, 160, 119);
+}
+
+.bestsellers__image {
+    display: block;
+    margin-left: auto;
+    margin-right: 17px;
+    margin-bottom: -51px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bestsellers__name {
+    border-radius: 10px;
+    background: rgb(81, 191, 79);
+    color: white;
+    width: 100%;
+    height: 112px;
+    padding-top: 65px;
+    padding-left: 22px;
+    z-index: -1;
+    position: relative;
+}
+
+.form {
+    padding: 33px 15px 66px 15px;
+
+}
+
+.form__title {
+    margin-bottom: 62px;
+}
+
+.form__body {
+    border-radius: 20px;
+    background: rgb(61, 160, 119);
+    padding: 47px 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+
+.form__email,
+.form__phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__email-label {}
+
+.form__email-input,
+.form__phone-input {
+    height: 43px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 17px;
+    padding: 0 20px;
+}
+
+.form__phone-label {}
+
+.form__button {
+    color: white;
+    border-radius: 10px;
+    background: rgb(81, 191, 79);
+    padding: 17px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 80px;
+}
+
+.form__button::before {
+    content: url(img/btn-icon.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-90%);
+
+}
+
+.form__button:active {
+    transform: translateY(-10px);
+}
+
+.form__body::before,
+.form__body::after {
+    content: "";
+    width: 121px;
+    height: 121px;
+    background: rgb(61, 160, 119);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.form__body::before {
+    left: 0;
+    top: -50px;
+    animation: move-right 7s linear 0s infinite alternate;
+}
+
+.form__body::after {
+    right: 0;
+    bottom: -50px;
+    animation: move-left 7s linear 0s infinite alternate;
+}
+
+@keyframes move-right {
+    0% {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-left {
+    0% {
+        right: 100%;
+        transform: translateX(100%);
+    }
+}
